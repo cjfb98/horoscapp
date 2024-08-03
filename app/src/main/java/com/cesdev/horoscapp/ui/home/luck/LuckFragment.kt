@@ -6,8 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.cesdev.horoscapp.databinding.FragmentLockBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-class LockFragment : Fragment() {
+@AndroidEntryPoint
+class LuckFragment : Fragment() {
     @Suppress("ktlint:standard:backing-property-naming")
     private var _binding: FragmentLockBinding? = null
     private val binding get() = _binding!!

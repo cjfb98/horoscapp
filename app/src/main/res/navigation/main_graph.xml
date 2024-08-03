@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/lockFragment"
-        android:name="com.cesdev.horoscapp.ui.home.luck.LockFragment"
+        android:name="com.cesdev.horoscapp.ui.home.luck.LuckFragment"
         android:label="fragment_lock"
         tools:layout="@layout/fragment_lock" />
     <fragment
