@@ -8,7 +8,8 @@ import com.cesdev.horoscapp.domain.model.HoroscopeInfo
 
 class HoroscopeAdapter(
     private var horoscopeList: List<HoroscopeInfo> = emptyList(),
-) : RecyclerView.Adapter<HoroscopeViewHolder>() {
+   val onItemSelected:(HoroscopeInfo)->Unit
+    ) : RecyclerView.Adapter<HoroscopeViewHolder>() {
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int,
@@ -24,7 +25,7 @@ class HoroscopeAdapter(
         holder: HoroscopeViewHolder,
         position: Int,
     ) {
-       holder.render(horoscopeList[position])
+       holder.render(horoscopeList[position],onItemSelected)
     }
     fun updateList(list: List<HoroscopeInfo>){
         horoscopeList=list
