@@ -1,5 +1,5 @@
 package com.cesdev.horoscapp.domain.model
 
 enum class HoroscopeModel {
-    Aries, Aquarius, Leo, Gemini, Capricorn, Virgo, Cancer, Picis, Taurus, Sagittarius, Scorpio, Libra
+    Aries, Aquarius, Leo, Gemini, Capricorn, Virgo, Cancer, Pisces, Taurus, Sagittarius, Scorpio, Libra
 }
