@@ -42,6 +42,14 @@ android {
 }
 
 dependencies {
+    val cameraVersion = "1.2.3"
+    //Camera X
+    implementation ("androidx.camera:camera-core:${cameraVersion}")
+    implementation ("androidx.camera:camera-camera2:${cameraVersion}")
+    implementation ("androidx.camera:camera-lifecycle:${cameraVersion}")
+    implementation ("androidx.camera:camera-view:${cameraVersion}")
+    implementation ("androidx.camera:camera-extensions:${cameraVersion}")
+
     implementation("com.google.dagger:hilt-android:2.48")
     kapt("com.google.dagger:hilt-compiler:2.48")
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
